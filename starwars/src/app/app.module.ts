@@ -1,9 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { SnakecasePipe } from './snakecase.pipe';
 import { ComponentesModule } from './componentes/componentes.module';
-
+import { routing } from './app.routing';
 @NgModule({
   declarations: [
     AppComponent,
@@ -11,7 +13,9 @@ import { ComponentesModule } from './componentes/componentes.module';
   ],
   imports: [
     BrowserModule,
-    ComponentesModule
+    ComponentesModule,
+    HttpClientModule,
+    routing,
   ],
   providers: [],
   bootstrap: [AppComponent]

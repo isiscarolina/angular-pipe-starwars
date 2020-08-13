@@ -11,8 +11,8 @@
             <li>Altura: {{ personagem.height }} cm</li>
             <li *ngIf="personagem.gender == 'male'">Gênero: Masculino</li>
             <li *ngIf="personagem.gender != 'male'">Gênero: Feminino</li>
-            <li>Preço do boneco: {{ personagem.price | currency: 'BRL' }}</li>
-            <li>Nota:{{ personagem.rating  | number:'1.1-2'}}</li>
+            <li>Ano de nascimento {{ personagem.birth_year }}</li>
+            <li>Url:<a href="{{ personagem.url }}" target="_blank"></a></li>
             <li>Registrado em: {{ personagem.created | date: "d/M/yyyy"}}</li>
           </ul>  
         </li>            
