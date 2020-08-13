@@ -28,6 +28,11 @@ export class PersonagensService {
     //return this.personagens;
 
     return this.http.get('https://swapi.dev/api/people/');
+
   }
+
+getPersonagem(id) {
+  return this.http.get('http://swapi.dev/api/people/'+id);
+}
 
 }

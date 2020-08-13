@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { PersonagensComponent } from './personagens/personagens.component';
+import { PersonagemComponent } from './personagem/personagem.component'
 import { HomeComponent } from './home/home.component';
 import { PlanetasComponent } from './planetas/planetas.component';
 import { SnakecasePipe } from './../snakecase.pipe';
@@ -9,6 +10,7 @@ import { SnakecasePipe } from './../snakecase.pipe';
 @NgModule({
   declarations: [
     PersonagensComponent,
+    PersonagemComponent,
     HomeComponent,
     PlanetasComponent,
     SnakecasePipe,
@@ -19,6 +21,7 @@ import { SnakecasePipe } from './../snakecase.pipe';
 
   exports: [
     PersonagensComponent,
+    PersonagemComponent,
     HomeComponent,
     PlanetasComponent,
   ]
